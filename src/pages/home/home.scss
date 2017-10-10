@@ -1,3 +1,8 @@
 page-home {
-
+  ion-content {
+    background-color: color($colors, sec) !important;
+  }
+#logo .img-responsive{
+  display: inline-block;
+}
 }
