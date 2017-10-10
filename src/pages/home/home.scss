@@ -5,4 +5,10 @@ page-home {
 #logo .img-responsive{
   display: inline-block;
 }
+  .button-outline-md,
+  .button-outline-ios,
+  .button-outline-wp{
+    border: 2px solid color($colors, secondary) !important;
+  }
+
 }
