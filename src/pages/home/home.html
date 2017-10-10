@@ -1,14 +1,66 @@
 <ion-header>
   <ion-navbar>
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>
-      Ionic Blank
+      CREATE DISH
     </ion-title>
+    <ion-buttons end>
+      <button ion-button>
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div id="logo" class="col-xs-12 text-center form-group">
+  <img class="img-responsive" src="assets/img/logo.png">
+  </div>
+  <div id="pasta" class="col-xs-12 form-group">
+    <ion-item>
+      <ion-label>PASTA</ion-label>
+      <ion-select [(ngModel)]="PASTA" multiple="true">
+        <ion-option>Bacon</ion-option>
+        <ion-option>Black Olives</ion-option>
+        <ion-option>Extra Cheese</ion-option>
+        <ion-option>Mushrooms</ion-option>
+        <ion-option>Pepperoni</ion-option>
+        <ion-option>Sausage</ion-option>
+      </ion-select>
+    </ion-item>
+  </div>
+  <p class="text-center">+</p>
+  <div id="meat" class="col-xs-12 form-group">
+    <ion-item>
+      <ion-label>MEAT</ion-label>
+      <ion-select [(ngModel)]="MEAT" multiple="true">
+        <ion-option>Bacon</ion-option>
+        <ion-option>Black Olives</ion-option>
+        <ion-option>Extra Cheese</ion-option>
+        <ion-option>Mushrooms</ion-option>
+        <ion-option>Pepperoni</ion-option>
+        <ion-option>Sausage</ion-option>
+      </ion-select>
+    </ion-item>
+  </div>
+  <p class="text-center">+</p>
+  <div id="souce" class="col-xs-12 form-group">
+    <ion-item>
+      <ion-label>SAUCE</ion-label>
+      <ion-select [(ngModel)]="SAUCE" multiple="true">
+        <ion-option>Bacon</ion-option>
+        <ion-option>Black Olives</ion-option>
+        <ion-option>Extra Cheese</ion-option>
+        <ion-option>Mushrooms</ion-option>
+        <ion-option>Pepperoni</ion-option>
+        <ion-option>Sausage</ion-option>
+      </ion-select>
+    </ion-item>
+  </div>
+  <div class="col-xs-12 text-center">
+    <button ion-button round outline (click)="OnNext()">Find Out Meal</button>
+  </div>
 </ion-content>
